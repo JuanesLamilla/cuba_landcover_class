@@ -1,0 +1,21 @@
+name: cuba_classification
+channels:
+  - defaults
+  - conda-forge
+dependencies:
+  - python=3.12.2
+  - earthengine-api=0.1.393
+  - earthpy=0.9.4
+  - folium=0.14.0
+  - geemap=0.32.0
+  - geopandas=0.14.2
+  - matplotlib=3.8.0
+  - numpy=1.26.4
+  - pandas=2.2.1
+  - rasterio=1.3.9
+  - scikit-learn=1.3.0
+  - shapely=2.0.3
+  - xgboost=2.0.3
+  - pip=23.3.1
+  - pip:
+      - tensorflow==2.16.1
