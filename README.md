@@ -92,7 +92,7 @@ The confusion matrix provides a detailed breakdown of the model's predictions fo
     <img src="images/models_confusion_matrix.png" alt="Models Confusion Matrix" width="600"/>
 </div>
 
-We can also calculate the precision, recall, and F1-score for each class. All models excelled at predicting shallow and deep water, but struggled most with differentiating between barren and agriculture lands. Overall, all models performed well; however, the neural network model exhibited the best overall performance.
+We can also calculate the precision, recall, and F1-score for each class. All models excelled at predicting shallow and deep water, but struggled most with differentiating between barren and agriculture lands. Overall, all models performed well; however, the neural network model exhibited the best performance (particularly at detecting urban areas).
 
 
 | CART | Random Forest |
