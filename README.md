@@ -67,7 +67,7 @@ Due to long runtimes during model training and preprocessing, the various models
 
 ### Model Setup
 
-All models were trained using the same 75/25 train-test split. Each of the 6 land cover classes had 10,000 samples total. The input data was the 8 30-meter resolution bands of the Landsat 8 imagery. Landsat imagery was preprocessed to remove clouds, and median values were taken over a year to reduce noise.
+All models were trained using the same 75/25 train-test split. Each of the 6 land cover classes were randomly sampled for 10,000 samples (60,000 total). The input data was the 8 30-meter resolution bands of the Landsat 8 imagery. Landsat imagery was stitched together to create mosaic covering the whole of Cuba. Preprocessing then included removing clouds and getting the median values over a year to reduce noise.
 
 Architecture for the **neural network** can be seen below ([Neural Network Structure](#neural-network-structure)).
 
