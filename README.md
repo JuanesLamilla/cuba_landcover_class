@@ -67,9 +67,12 @@ Due to long runtimes during model training and preprocessing, the various models
 
 ### Model Setup
 
-The CART, Random Forest, and XGBoost where tested with 5-fold cross-validation to determine the best hyperparameters (max depth, number of estimators, minimum samples split). The best hyperparameters were then used to train the models on the entire training set.
+All models were trained using the same 75/25 train-test split. Each of the 6 land cover classes had 10,000 samples total. The input data was the 8 30-meter resolution bands of the Landsat 8 imagery. Landsat imagery was preprocessed to remove clouds, and median values were taken over a year to reduce noise.
 
-All models were trained using the same 75/25 train-test split. Architecture for the neural network can be seen below ([Neural Network Structure](#neural-network-structure)).
+Architecture for the **neural network** can be seen below ([Neural Network Structure](#neural-network-structure)).
+
+The **CART, Random Forest, and XGBoost** where tested with 5-fold cross-validation to determine the best hyperparameters (max depth, number of estimators, minimum samples split). The best hyperparameters were then used to train the models on the entire training set.
+
 
 ### Prediction Accuracies
 
